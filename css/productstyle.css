@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+	font-family: 'Mulish', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+
+img {
+	max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+#category {
+	height:15px;
+	background-color:#fafafa;
+	padding: 15px 0px;
+	font-size: 13px;
+	padding-bottom: 30px;
+}
+#category li {
+    display: inline;
+}
+#category li span {
+    text-decoration:none;
+}
+#main {
+	margin:auto;
+    flex-wrap: wrap;
+    /*margin-right: -15px;
+    margin-left: -15px;*/
+    box-sizing: border-box;
+    width: 1140px;
+	height:1450px;
+	/*background-color:#FCF;*/
+	
+}
+#left {
+	width:25%;
+	height:100%;
+	/*background-color:yellow;*/
+	float:left;
+}
+#menu-list {
+	height:40%;
+	width:100%;
+	background-color:red;
+	float:left;
+}
+#right {
+	height:100%;
+	width:75%;
+	/*background-color:#CCC;*/
+	float:left;
+}
+#topright {
+	height:3%;
+	width:100%;
+	/*background-color:#F96;*/
+	padding-top:-20px;
+	/*margin-top:-21px;*/
+}
+#Rtopright {
+	width:70%;
+	height:100%;
+	background-color:white;
+	float:left;
+}
+#Ltopright {
+	width: 30%;
+	height: 100%;
+	background-color: white;
+	float: right;
+}
+#soft-by {
+	float:right;
+	height:100%;
+	margin-bottom:20px;
+}
+/*PRODUCTS HERE*/
+#wrapper {
+	height:96%;
+	width:100%;
+	margin:0 auto;
+	/*background-color:#9FC;*/
+	float:left;
+}
+ul.products {
+	list-style: none;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	margin-left:-32px;
+}
+ul.products li {
+	flex-basis: 25%;
+	padding-left:15px;
+	padding-right:15px;
+	box-sizing:border-box;
+	margin-bottom:30px;
+}
+ul.products li img {
+	max-width: 100%;
+	height:auto;
+}
+ul.products li .product-top {
+	position:relative;
+	overflow:hidden;
+}
+ul.products li .product-top .product-thumb {
+	display:block;
+}
+ul.products li:hover .product-top .product-thumb img {
+	filter: opacity(80%);	
+}
+ul.products li .product-top .product-thumb img {
+	display:block;
+}
+ul.products li .product-top a.buy-now {
+	text-transform:uppercase;
+	text-align:center;
+	font-size:14px;
+	display:block;
+	background-color:#446084;
+	color:#fff;
+	padding:5px 0px;
+	position:absolute;
+	bottom:-30px;
+	width:100%;
+	transition:0.25s ease-in-out;
+	opacity:85%;
+}
+ul.products li:hover a.buy-now {
+	bottom: 0px;
+}
+ul.products li .product-info {
+	padding:15px 0px;
+}
+ul.products li .product-info a {
+	display:block;
+}
+ul.products li .product-info .product-name {
+	text-align: center;
+	color: black;
+    font-size: 14px;
+
+}
+ul.products li .product-info .product-price {
+	font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+	padding:2px 0px;
+}
+
+/*Recent Page*/
+#bottomright {
+	width:100%;
+	height:2%;
+	/*background-color:#CCC;*/
+	float:right;
+}
+#pagination .page-node.current {
+	opacity: 1;
+}
+#pagination .page-node {
+    display: inline-block;
+    margin: 30px 8px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 40%;
+}
+#pagination .next {
+    margin-left: 30px;
+	opacity: 40%;
+}
+/*.......*/
+h1 {
+	font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+	padding-left:20px;
+    font-family: "Quicksand", sans-serif;
+}
+.i{
+	opacity:50%;
+}
+ol{
+	margin-top:0px;
+	margin-left:60px;
+}
+a{
+	text-decoration: none;
+}
+/* Menu - Links (Sidebar)*/
+.menuList-links > li {
+    border-bottom: 1px dashed #e7e7e7;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.menuList-links > li > a {
+    color: #272727;
+    padding: 12px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+/*Title Price - Brand - Size*/
+.PBS{
+	text-transform: uppercase;
+	line-height: 22px;
+	padding: 10px 0 10px;
+	font-weight: 500;
+	font-size: 13px;
+}
+#dash {
+    position: relative;
+    top: -2px;
+    left: 5px;
+    font-size: 10px;
+	
+}
+/*Giá sản phẩm*/
+.A ul li label {
+	font-size:14px;
+	padding-bottom:5px;
+}
+.A ul li {
+	padding-bottom:5px;
+}
+.B ul li label {
+	font-size:14px;
+}
+/*Size*/
+.size-box-list li {
+	text-align: center;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    float: left;
+	font-size: 12px;
+	/*width: 42px;
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+    border: 1px solid #e5e5e5;*/
+}
+.size-box-list input[type="checkbox"] {
+    display: none;
+}
+.size-box-list li input[type="checkbox"]:checked + label, .size-box-list li:hover label {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #111;
+}
+.size-box-list li label {
+	border: 1px solid #e5e5e5;
+	padding: 12px;
+}

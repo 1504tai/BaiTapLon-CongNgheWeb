@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tất cả sản phẩm</title>
+	<link rel = "preconnect" href = "https://fonts.googleapis.com">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+	<link href = "https: //fonts.googleapis.com/css2? family = Mulish: wght @ 700 &family = Poppins: ital, wght @ 0,700; 1.200 & display = swap "rel =" stylesheet ">
+ 
+	<link rel="stylesheet" href="css/productstyle.css" />
+   	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+<div class="header">
+		<nav class="nav navbar-inverse navbar-fixed-top">
+			<a href="index.html"><img class="logo" src="img/kingdom.png" width="150"></a>
+			<div class="nav-link" id="navlink">
+				<i class="fa fa-times" onClick="hideMenu()"></i>
+				<ul>
+					
+					<li><a href="index.html">TRANG CHỦ</a></li>
+					<li><a href="">SẢN PHẨM</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">LIÊN HỆ</a></li>
+					<li><a href="giohang.html">THANH TOÁN</a></li>
+					<li class="icon"><img src="img/user.png"></li>
+					<li class="icon"><img src="img/shopping-cart.png"></li>
+
+					<li class="icon">
+						<form action="" id="search-box">
+							<input type="text" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+							<button id="search-btn">
+								<img src="img/loupe.png">
+							</button>
+						</form>
+					</li>
+
+				</ul>
+
+			</div>
+			<i class="fa fa-bars" onClick="showMenu()"></i>
+		</nav>
+	</div>
+<!--Banner-->
+<div id="banner">
+	<div>
+    	<img src="img/banner1.jpg" alt="Products">
+    </div>
+</div>
+<!--Category-->
+<div id="category">
+	<ol>
+		 <li>
+			<a href="index.html">
+				<span style="color:#272727;">Trang chủ</span>
+            </a>
+         </li>
+         
+         <li>
+         	<i class="fa-solid fa-angle-right" style="opacity:50%;"></i>
+            <a href="Product.html">
+               <span style="color:#272727;">Sản phẩm</span>
+           </a>
+         </li>
+         
+         <li>
+         	  <i class="fa-solid fa-angle-right" style="opacity:50%;"></i>	
+         	  <span><span style="color: #777777">Tất cả sản phẩm</span></span>
+         </li>
+	</ol>
+</div>
+<!--Container-->
+<div id=""container style="margin-top:50px;">
+	<div id="main">
+    	<div id="left">
+        	<!--<div id="menu-list">
+            </div>-->
+            <div class="">
+                    
+                      <ul class="menuList-links" style="list-style-type: none; padding: 0;">
+                        <li class=""><a href="index.html" title="Trang chủ"><span>Trang chủ</span></a></li>
+                       <!-- <li class=" active "><a href="product.html" title="Bộ sưu tập"><span>Bộ sưu tập</span></a></li> -->
+                        
+                        <li class="">
+                          <a href="" title="Sản phẩm" >Sản phẩm</a>
+                        </li>
+                        
+                        <li class=""><a href="contact.html" title="Blog"><span>Liên hệ</span></a></li>
+                        <li class=""><a href="blog.html" title="Liên hệ"><span>Blog</span></a></li>
+                        <li class=""><a href="giohang.html" title="Thanh toán"><span>Thanh toán</span></a></li>
+                      </ul>
+            </div>
+            <!--<div id="pricefilter"-->
+             <div class="">
+                      <span class="PBS">Giá sản phẩm</span><span id="dash"><i class="fa fa-minus"></i></span>
+                      <div class="A">
+                        <ul class="check-box-list" style="list-style-type: none; margin-left:-45px;">
+                          <li>
+                            <input type="checkbox" id="p1">
+                            <label for="p1">
+                              <span>Dưới</span> 200,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p2">
+                            <label for="p2">
+                              200,000₫ - 500,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p3">
+                            <label for="p3">
+                              500,000₫ - 1,000,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p4">
+                            <label for="p4">
+                              1,000,000₫ - 2,000,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p5">
+                            <label for="p5">
+                              <span>Trên</span> 2,000,000₫
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--Brand-->
+                    <div class="" >
+                      		<span class="PBS" >Thương hiệu</span><span id="dash"
+                          	<i class="fa fa-minus"></i></span>
+                      				<div class="B">
+                       					 <ul class="check-box-list" style="list-style-type: none; margin-left:-45px;">
+                          					<li>
+                            					<input type="checkbox" id="data-brand-p1" value="Khác">
+                           						<label for="data-brand-p1">Coolmate</label>
+                          					</li>
+                                            <li>
+                            					<input type="checkbox" id="data-brand-p1" value="Khác">
+                           						<label for="data-brand-p1">Gucci</label>
+                          					</li>
+                                            <li>
+                            					<input type="checkbox" id="data-brand-p1" value="Khác">
+                           						<label for="data-brand-p1">Owen</label>
+                          					</li>
+                                            <li>
+                            					<input type="checkbox" id="data-brand-p1" value="Khác">
+                           						<label for="data-brand-p1">Lacoste</label>
+                          					</li>
+                                            <li>
+                            					<input type="checkbox" id="data-brand-p1" value="Khác">
+                           						<label for="data-brand-p1">Blue</label>
+                          					</li>
+                       					 </ul>
+                                   </div>
+                   	</div>
+                    	<!--Size-->
+          		<div class="">
+                      <span class="PBS">Kích thước</span><span id="dash"><i class="fa fa-minus"></i></span>
+                      <div>
+                        <ul class="size-box-list" style="list-style-type: none; margin-left: -40px; padding-top: 15px;">
+
+                          <li>
+                            <input type="checkbox" id="s">
+                            <label for="s">S</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="m">
+                            <label for="m">M</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="l">
+                            <label for="l">L</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="xl">
+                            <label for="xl">XL</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="2xl">
+                            <label for="2xl">2XL</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="3xl">
+                            <label for="3xl">3XL</label>
+                          </li>
+
+                        </ul>
+                      </div>
+                </div>
+        </div>
+        <!--END LEFT-->
+        <div id="right">
+        	<div id="topright">
+            	<div id="Rtopright">
+            		<h1>Tất cả sản phẩm</h1>            	
+                </div>
+                <div id="Ltopright">                
+            	  <select name="select" style="margin-top: 7px; margin-left: 117px; border-color: transparent; border-bottom: 1px solid 						#000; padding-bottom: 5px;">
+            	    <option value="price-ascending">Giá: Tăng dần</option>
+            	    <option value="price-descending">Giá: Giảm dần</option>
+            	    <option value="title-ascending">Tên: A-Z</option>
+            	    <option value="title-descending">Tên: Z-A</option>
+            	    <option value="created-ascending">Cũ nhất</option>
+            	    <option value="created-descending">Mới nhất</option>
+            	    <option value="best-selling">Bán chạy nhất</option>
+          	    </select>
+                </div>
+			</div>
+	<!--PRODUCTS-->                  
+           <div id="wrapper">
+            	<ul class="products">
+                	<li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="Productdetail.html" class="product-thumb">
+                                	<img src="img/m1.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="Productdetail.html" class="buy-now">Mua ngay</a>
+                            </div>
+                            <div class="product-info">
+                            	<a href="Productdetail.html" class="product-name">Áo thun Polo Nam</a>
+                                <div class="product-price">1,200,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m2.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a>
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam đen</a>
+                                <div class="product-price">1,000,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m3.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam đỏ</a>
+                                <div class="product-price">1,500,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m4.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo thun Polo Nam</a>
+                                <div class="product-price">1,200,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m5.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam trắng</a>
+                                <div class="product-price">900,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m6.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam xanh rêu</a>
+                                <div class="product-price">2,000,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m7.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam xanh</a>
+                                <div class="product-price">1,400,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m8.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam tay dài</a>
+                                <div class="product-price">1,800,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q1.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần Kaki Nam đen</a>
+                                <div class="product-price">2,000,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q2.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần thể thao Nam</a>
+                                <div class="product-price">2,200,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q3.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần dài Nam màu da</a>
+                                <div class="product-price">2,500,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q4.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần tây Nam đen xanh</a>
+                                <div class="product-price">3,000,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q5.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần đùi Nam đen</a>
+                                <div class="product-price">500,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q6.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần đùi Nam vải Kaki</a>
+                                <div class="product-price">700,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q7.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần đùi Kaki </a>
+                                <div class="product-price">300,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/q8.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Quần đùi vải Nam</a>
+                                <div class="product-price">800,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/n1.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Thắt lưng da màu đen</a>
+                                <div class="product-price">1,500,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/n2.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Thắt lưng da bò</a>
+                                <div class="product-price">2,800,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/n3.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Thắt lưng da bò nâu</a>
+                                <div class="product-price">2,500,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/n4.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Thắt lưng da nâu sẫm</a>
+                                <div class="product-price">2,200,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+    <!--Show Recent page-->          
+           <div id="bottomright">
+				<div class="" style="text-align: center;">
+         			 <div id="pagination" >
+          				  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             				 <span class="page-node current">1</span>
+            					  <a class="page-node" href="">2</a>
+             					  <a class="next" href="">
+                           			 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                              		y="0px" viewBox="0 0 31 10" style="enable-background:new 0 0 31 10; width: 31px; height: 10px;"
+                             		xml:space="preserve"><polygon points="31,5 25,0 25,4 0,4 0,6 25,6 25,10 "></polygon></svg>
+                                  </a>
+           				 </div>
+        		    </div>
+       			</div>
+           </div>
+        </div>
+    </div>
+</div>
+<!--FOOTER-->
+<div class="footer">
+		<img src="img/kingdom.png" width="200">
+		<h4>About Us</h4>
+		<p>KINGDOM - Cửa hàng thời trang nam. Địa chỉ 12 Nguyễn Văn Bảo - Phường 4 - Q. Gò Vấp - Thành Phố Hồ Chí Minh</p>
+		<div class="link">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		<p>Made <i class="fa fa-heart-o"></i> by King Team </p>
+	</div>
+</body>
+</html>

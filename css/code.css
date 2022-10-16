@@ -1,0 +1,74 @@
+
+.main
+{
+    margin: 0px;
+	box-sizing: border-box;
+	width: 1500px;
+}
+.map
+{
+    width: 50%;
+	height: 100%;
+	float: left;
+    style="z-index: 3; 
+    position: absolute; 
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px; 
+    left: 0px; 
+    top: 0px; 
+    touch-action: pan-x pan-y;
+}
+.form
+{
+    width: 50%;
+	height: 100%;
+	float: right;
+}
+.dangki
+{
+    * {
+        font-family: 'Quicksand', sans-serif!important;
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    user agent stylesheet
+    form {
+        display: block;
+        margin-top: 0em;
+    }
+}
+#noidung
+{
+    height: 60px;
+    width: 300px;
+}
+#hovaten
+{
+    height: 25px;
+    width: 300px;
+}
+#email
+{
+    height: 25px;
+    width: 300px;
+}
+#sodienthoai
+{
+    height: 25px;
+    width: 300px;
+}
+#button
+{
+    color: #fff;
+    background-color: #000000;
+    height: 25px;
+    width: 80px;
+    
+}
+

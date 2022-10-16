@@ -1,0 +1,134 @@
+   /* PAYMENT */
+.payment {
+    position: relative;
+    margin: auto;
+    padding: 100px 0;
+}
+.payment-top-wrap{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.payment-top{
+    height: 2px;
+    width: 70%;
+    background-color:#dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+.payment-top-item{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.payment-top-item i {
+    color:#dddddd ;
+}
+.payment-top-payment{
+    color:#dddddd ;
+    border: 1px solid #2d60d7;
+}
+.payment-top-payment{
+    color:#05b3c9 ;
+}
+.payment-content-left{
+    width: 60%;
+}
+.payment-content-right{
+    width: 40%;
+    border-left: 2px solid #ddd;
+    padding-left: 12px;
+}
+.payment-content-left p,label{
+    font-size: 12px;
+    font-family: var(--main-text-font);
+}
+.payment-content-right-button{
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px dashed #dddddd;
+}
+.payment-content-right-button input{
+    height: 30px;
+    width: 200px;
+    margin-right: 100px;
+    padding-left: 12px;
+}
+.payment-content-right-button button{
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}   
+.payment-content-right-payment button{
+    height: 30px;
+    width: 0 20px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    transition: all 0,3s ease;
+    border: 2px solid black;
+} 
+.payment-content-right-payment button:hover{
+    background-color: black;
+    color: #fff;
+} 
+/*footer*/
+.footer{
+	width:  100%;
+	text-align: center;
+	padding: 30px 0;
+}
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+.footer p{
+	margin: 10px;
+}
+.link .fa{
+	color: #f44336;
+	margin: 0 13px;
+	cursor: pointer;
+	padding: 10px 0;
+}
+.fa-heart-o{
+	color: #f44336;
+	margin-top: 15px;
+}
+.w-075{
+	width: 75%;
+}
+.w-720px{
+	width: 720px;
+}
+.mx-auto{
+	margin: 0 auto;
+}
+.w-full{
+	width: 100%;
+}
+.py-5{
+	padding: 40px 0;
+}
+.payment .container{
+    margin-left: 20%;
+}
+#text-thanhtoan{
+    font-size: 17px;
+}
+
+
+
+
+

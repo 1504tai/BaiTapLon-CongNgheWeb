@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+	<link href = "https: //fonts.googleapis.com/css2? family = Mulish: wght @ 700 &family = Poppins: ital, wght @ 0,700; 1.200 & display = swap "rel =" stylesheet ">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+	var	navlink = document.getElementById("navlink");
+	function showMenu(){
+		navlink.style.right = "0";
+	}
+	function hideMenu(){
+		navlink.style.right = "-200px";
+	}
+</script>
+<body>
+    <!--					-------------------header-->
+	<div class="header">
+		<nav class="nav navbar-inverse navbar-fixed-top">
+			<a href="index.html"><img class="logo" src="img/kingdom.png" width="150"></a>
+			<div class="nav-link" id="navlink">
+				<i class="fa fa-times" onClick="hideMenu()"></i>
+				<ul>
+					
+					<li><a href="index.html">TRANG CHỦ</a></li>
+					<li><a href="Product.html">SẢN PHẨM</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">LIÊN HỆ</a></li>
+					<li><a href="giohang.html">THANH TOÁN</a></li>
+					<li class="icon"><img src="img/user.png"></li>
+					<li class="icon"><img src="img/shopping-cart.png"></li>
+
+					<li class="icon">
+						<form action="" id="search-box">
+							<input type="text" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+							<button id="search-btn">
+								<img src="img/loupe.png">
+							</button>
+						</form>
+					</li>
+
+				</ul>
+
+			</div>
+			<i class="fa fa-bars" onClick="showMenu()"></i>
+		</nav>
+	</div>
+    <div class="container">
+        <div class="content">
+            <div class="article">
+                <div class="img">
+                    <a href="./blog1.html"><img  src="./img/img-1.jpg" alt="" width="275px" weight="345px"></a>
+                </div>
+                <div class="text">
+                    <h3><a href="./blog1.html">5 cách phối đồ siêu độc đáo nhất!</a></h3>
+                </div>
+            </div>
+            <div class="article">
+                <div class="img">
+                    <a href="./blog2.html"><img src="./img/img-2.jpg" alt="" width="275px" weight="345px"></a>
+                </div>
+                <div class="text">
+                    <h3><a href="./blog2.html">Thay đổi phong cách thay đổi cuộc đời</a></h3>
+                </div>
+            </div>
+            <div class="article">
+                <div class="img">
+                    <a href="./blog3.html"><img  src="./img/img-3.jpg" alt="" width="275px" weight="345px"></a>
+                </div>
+                <div class="text">
+                    <h3><a href="./blog3.html">Bật mí cùng bạn các cách phối đồ!</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--		---------------footer----------->
+	<div class="footer">
+		<img src="img/kingdom.png" width="200">
+		<h4>About Us</h4>
+		<p>KINGDOM - Cửa hàng thời trang nam. Địa chỉ 12 Nguyễn Văn Bảo - Phường 4 - Q. Gò Vấp - Thành Phố Hồ Chí Minh</p>
+		<div class="link">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		<p>Made <i class="fa fa-heart-o"></i> by King Team</p>
+	</div>
+</body>
+</html>

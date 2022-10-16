@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sản phẩm</title>
+
+<link rel="stylesheet" href="css/detailstyle.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+<link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Mulish: wght @ 700 &family = Poppins: ital, wght @ 0,700; 1.200 & display = swap "rel =" stylesheet ">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+<!--HEADER-->
+<div class="header">
+		<nav class="nav navbar-inverse navbar-fixed-top">
+			<a href="index.html"><img class="logo" src="img/kingdom.png" width="150"></a>
+			<div class="nav-link" id="navlink">
+				<i class="fa fa-times" onClick="hideMenu()"></i>
+				<ul>
+					
+					<li><a href="index.html">TRANG CHỦ</a></li>
+					<li><a href="Product.html">SẢN PHẨM</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">LIÊN HỆ</a></li>
+					<li><a href="giohang.html">THANH TOÁN</a></li>
+					<li class="icon"><img src="img/user.png"></li>
+					<li class="icon"><img src="img/shopping-cart.png"></li>
+
+					<li class="icon">
+						<form action="" id="search-box">
+							<input type="text" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+							<button id="search-btn">
+								<img src="img/loupe.png">
+							</button>
+						</form>
+					</li>
+
+				</ul>
+
+			</div>
+			<i class="fa fa-bars" onClick="showMenu()"></i>
+		</nav>
+</div>
+<!--Category-->
+<div id="category">
+	<ol>
+		 <li>
+			<a href="index.html">
+				<span style="color:#272727;">Trang chủ</span>
+            </a>
+         </li>
+         
+         <li>
+         	<i class="fa-solid fa-angle-right" style="opacity:50%;"></i>
+            <a href="Product.html">
+               <span style="color:#272727;">Sản phẩm</span>
+           </a>
+         </li>
+         
+         <li>
+         	  <i class="fa-solid fa-angle-right" style="opacity:50%;"></i>	
+         	  <span><span style="color: #777777">Áo thun Polo Nam</span></span>
+         </li>
+	</ol>
+</div>
+<!--BODY-->
+<div id="container" style="margin-top:40px;">
+	<div id="main">
+    	<!--LEFT-->
+    	<div id="left">
+    		<div id="image-big" style="margin-bottom: 25px; margin-left: -30px;">
+    			<img style="border: 2px solid #f7f7f8;" src="img/MM1.jpg" alt="" width="590" height="600"/>;
+    		</div>
+            <div id="image-small">
+    			<ul class="small-image" style="margin-top:-10px; padding-left: 110px;">
+                	<li><img src="img/m7.jpg" alt="" width="100" height="100"/></li>
+                    <li><img src="img/m1.jpg" alt="" width="100" height="100"/></li>
+                    <li><img src="img/m4.jpg" alt="" width="100" height="100"/></li>
+                </ul>
+    		</div>
+    	</div>
+        <!--RIGHT-->
+        <div id="right">
+    		<div id="product-name">
+    			<h1>Áo thun Polo Nam</h1>
+                <span id="sku">SKU: M-001-1</span>
+    		</div>
+            <div id="price">
+    			<span class="pro-price">1,200,000₫</span>
+    		</div>
+            <div id="color">
+    			<span>Màu</span>
+                <div class="select-swap" style="display: flex; padding-top: 20px; margin-left: -5px;" >
+                        <div data-value="Đen">
+                          <input id="den" type="radio" name="option1" value="Đen"
+                            data-vhandle="den" checked="">
+                          <label class="den" for="swatch-0-den">
+                            <span>Xanh</span>
+                          </label>
+                        </div>
+                        
+                        <div data-value="Trắng" style="padding-left:20px;">
+                          <input id="trang" type="radio" name="option1" value="Trắng"
+                            data-vhandle="trang">
+                          <label class="trang" for="swatch-0-nau">
+                            <span>Đen</span>
+                          </label>
+                        </div>
+                        
+                        <div data-value="Nâu" style="padding-left:20px;">
+                          <input id="nau" type="radio" name="option1" value="Nâu"
+                            data-vhandle="nau">
+                          <label class="nau" for="swatch-0-nau">
+                            <span>Nâu</span>
+                          </label>
+                        </div>
+                        
+                      </div>
+    		</div>
+            <div id="size">
+    			<div class="">
+                        <ul class="size-box-list" style="list-style-type: none; margin-left: -35px;">
+
+                          <li>
+                            <input type="checkbox" id="s">
+                            <label for="s">S</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="m">
+                            <label for="m">M</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="l">
+                            <label for="l">L</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="xl">
+                            <label for="xl">XL</label>
+                          </li>
+                          
+                        </ul>
+                      </div>
+    		</div>
+            <div id="Quantity">
+    			<div class="quantity-area clearfix">
+                      <input type="button" value="-" onclick="minusQuantity()" class="qty-btn">
+                      <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                      <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
+                    </div>
+    		</div>
+            <div id="buy">
+    			<button class="btn1"> THÊM VÀO GIỎ HÀNG </button>
+                <button class="btn2"> MUA NGAY </button>
+    		</div>
+            <div id="description">
+    			<h2 style="font-size: 14px; font-weight: 700; text-decoration: underline; padding-top:20px;">Mô tả</h2>
+                <p style="line-height:25px;">Áo Polo Excool là sản phẩm khác biệt đầu tiên ứng dụng công nghệ Excool mới để tạo ra một chiếc áo Polo thế hệ mới không chỉ bền, đẹp mà còn đạt nhiều tính năng được người tiêu dùng quan tâm. </p>
+                <ul style="padding-left:-20px; line-height:30px;">
+                	<li>Chất liệu: 56% Polyester PET high stretch + 44% Polyester PTT Sorona</li>
+                    <li>Form áo regular fit, phù hợp với mọi dáng người</li>
+                    <li>Thấm hút và nhanh khô để bạn luôn cảm thấy thoải mái và tự tin</li>
+                    <li>Một chiếc áo Polo thực sự chất lượng, tự hào sản xuất tại Quận 12, Hồ Chí Minh, Việt Nam</li>
+                    <li>Cảm giác tự tin, thoải mái, năng động với mọi hoạt động ngày dài từ thể thao</li>
+                </ul>
+    		</div>
+    	</div>
+        <!--BOTTOM-->
+        <div id="relatedproduct">
+        	<h2>Sản phẩm liên quan</h2>
+            <span></span>
+            <div id="showproduct" style="padding-top:70px;">
+            	<div id="wrapper">
+            		<ul class="products">
+                	<li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="Productdetail.html" class="product-thumb">
+                                	<img src="img/m1.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="Productdetail.html" class="buy-now">Mua ngay</a>
+                            </div>
+                            <div class="product-info">
+                            	<a href="Productdetail.html" class="product-name">Áo thun Polo Nam </a>
+                                <div class="product-price">1,200,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m2.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a>
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam đen</a>
+                                <div class="product-price">1,000,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m3.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo Sơ mi Nam đỏ</a>
+                                <div class="product-price">1,500,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="product-item">
+                        	<div class="product-top">
+                            	<a href="" class="product-thumb">
+                                	<img src="img/m4.jpg" alt="Hình sẩn phẩm">
+                                </a>
+                                <a href="" class="buy-now">Mua ngay</a> 
+                            </div>
+                            <div class="product-info">
+                            	<a href="" class="product-name">Áo thun Polo Nam </a>
+                                <div class="product-price">1,000,000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                   	</ul>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<!--FOOTER-->
+<div class="footer">
+		<img src="img/kingdom.png" width="200">
+		<h4>About Us</h4>
+		<p>KINGDOM - Cửa hàng thời trang nam. Địa chỉ 12 Nguyễn Văn Bảo - Phường 4 - Q. Gò Vấp - Thành Phố Hồ Chí Minh</p>
+		<div class="link">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		<p>Made <i class="fa fa-heart-o"></i> by King Team </p>
+</div>
+</body>
+</html>
