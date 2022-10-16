@@ -17,7 +17,7 @@ btnLogin.addEventListener("click", (e) => {
   }
   if (localStorage.getItem(username.value) == json) {
     alert("Đăng nhập thành công.");
-    window.location.href = "../html/index.html";
+    window.location.href = "../index.html";
   } else {
     alert("Đăng nhập thất bại.");
   }
