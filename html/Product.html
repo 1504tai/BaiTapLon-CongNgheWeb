@@ -7,8 +7,8 @@
 	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 	<link href = "https: //fonts.googleapis.com/css2? family = Mulish: wght @ 700 &family = Poppins: ital, wght @ 0,700; 1.200 & display = swap "rel =" stylesheet ">
  
-	<link rel="stylesheet" href="css/productstyle.css" />
-   	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="../css/productstyle.css" />
+   	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
 </head>
@@ -16,24 +16,25 @@
 <body>
 <div class="header">
 		<nav class="nav navbar-inverse navbar-fixed-top">
-			<a href="index.html"><img class="logo" src="img/kingdom.png" width="150"></a>
+			<a href="./index.html"><img class="logo" src="../img/kingdom.png" width="150"></a>
 			<div class="nav-link" id="navlink">
 				<i class="fa fa-times" onClick="hideMenu()"></i>
 				<ul>
 					
-					<li><a href="index.html">TRANG CHỦ</a></li>
-					<li><a href="">SẢN PHẨM</a></li>
-					<li><a href="blog.html">BLOG</a></li>
-					<li><a href="contact.html">LIÊN HỆ</a></li>
-					<li><a href="giohang.html">THANH TOÁN</a></li>
-					<li class="icon"><img src="img/user.png"></li>
-					<li class="icon"><img src="img/shopping-cart.png"></li>
+					<li><a href="./index.html">TRANG CHỦ</a></li>
+					<li><a href="./Product.html">SẢN PHẨM</a></li>
+					<li><a href="./blog.html">BLOG</a></li>
+					<li><a href="./contact.html">LIÊN HỆ</a></li>
+					<li><a href="./giohang.html">THANH TOÁN</a></li>
+					<li class="icon"><a href="./login.html"><img src="../img/user.png"></a></li>
+					<li class="icon"><a href="./giohang.html"><img src="../img/shopping-cart.png"></a></li>
+                    <li><a href="">SITEMAP</a></li>
 
 					<li class="icon">
 						<form action="" id="search-box">
 							<input type="text" id="search-text" placeholder="Bạn muốn tìm gì?" required>
 							<button id="search-btn">
-								<img src="img/loupe.png">
+								<img src="../img/loupe.png">
 							</button>
 						</form>
 					</li>
@@ -47,21 +48,21 @@
 <!--Banner-->
 <div id="banner">
 	<div>
-    	<img src="img/banner1.jpg" alt="Products">
+    	<img src="../img/banner1.jpg" alt="Products">
     </div>
 </div>
 <!--Category-->
 <div id="category">
 	<ol>
 		 <li>
-			<a href="index.html">
+			<a href="./index.html">
 				<span style="color:#272727;">Trang chủ</span>
             </a>
          </li>
          
          <li>
          	<i class="fa-solid fa-angle-right" style="opacity:50%;"></i>
-            <a href="Product.html">
+            <a href="./Product.html">
                <span style="color:#272727;">Sản phẩm</span>
            </a>
          </li>
@@ -81,16 +82,16 @@
             <div class="">
                     
                       <ul class="menuList-links" style="list-style-type: none; padding: 0;">
-                        <li class=""><a href="index.html" title="Trang chủ"><span>Trang chủ</span></a></li>
+                        <li class=""><a href="./index.html" title="Trang chủ"><span>Trang chủ</span></a></li>
                        <!-- <li class=" active "><a href="product.html" title="Bộ sưu tập"><span>Bộ sưu tập</span></a></li> -->
                         
                         <li class="">
-                          <a href="" title="Sản phẩm" >Sản phẩm</a>
+                          <a href="./Product.html" title="Sản phẩm" >Sản phẩm</a>
                         </li>
                         
-                        <li class=""><a href="contact.html" title="Blog"><span>Liên hệ</span></a></li>
-                        <li class=""><a href="blog.html" title="Liên hệ"><span>Blog</span></a></li>
-                        <li class=""><a href="giohang.html" title="Thanh toán"><span>Thanh toán</span></a></li>
+                        <li class=""><a href="./contact.html" title="Blog"><span>Liên hệ</span></a></li>
+                        <li class=""><a href="./blog.html" title="Liên hệ"><span>Blog</span></a></li>
+                        <li class=""><a href="./giohang.html" title="Thanh toán"><span>Thanh toán</span></a></li>
                       </ul>
             </div>
             <!--<div id="pricefilter"-->
@@ -224,13 +225,13 @@
                 	<li>
                     	<div class="product-item">
                         	<div class="product-top">
-                            	<a href="Productdetail.html" class="product-thumb">
-                                	<img src="img/m1.jpg" alt="Hình sẩn phẩm">
+                            	<a href="./Productdetail.html" class="product-thumb">
+                                	<img src="../img/m1.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="Productdetail.html" class="buy-now">Mua ngay</a>
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ </a>
                             </div>
                             <div class="product-info">
-                            	<a href="Productdetail.html" class="product-name">Áo thun Polo Nam</a>
+                            	<a href="./Productdetail.html" class="product-name">Áo thun Polo Nam</a>
                                 <div class="product-price">1,200,000₫</div>
                             </div>
                         </div>
@@ -238,10 +239,10 @@
                     <li>
                     	<div class="product-item">
                         	<div class="product-top">
-                            	<a href="" class="product-thumb">
-                                	<img src="img/m2.jpg" alt="Hình sẩn phẩm">
+                            	<a href="./Productdetail.html" class="product-thumb">
+                                	<img src="../img/m2.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a>
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ </a>
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Áo Sơ mi Nam đen</a>
@@ -252,10 +253,10 @@
                     <li>
                     	<div class="product-item">
                         	<div class="product-top">
-                            	<a href="" class="product-thumb">
-                                	<img src="img/m3.jpg" alt="Hình sẩn phẩm">
+                            	<a href="./Productdetail.html" class="product-thumb">
+                                	<img src="../img/m3.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Áo Sơ mi Nam đỏ</a>
@@ -267,9 +268,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/m4.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/m4.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Áo thun Polo Nam</a>
@@ -281,9 +282,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/m5.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/m5.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Áo Sơ mi Nam trắng</a>
@@ -295,9 +296,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/m6.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/m6.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Áo Sơ mi Nam xanh rêu</a>
@@ -309,9 +310,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/m7.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/m7.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Áo Sơ mi Nam xanh</a>
@@ -323,9 +324,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/m8.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/m8.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Áo Sơ mi Nam tay dài</a>
@@ -337,9 +338,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q1.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q1.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần Kaki Nam đen</a>
@@ -351,9 +352,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q2.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q2.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần thể thao Nam</a>
@@ -365,9 +366,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q3.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q3.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần dài Nam màu da</a>
@@ -379,9 +380,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q4.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q4.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần tây Nam đen xanh</a>
@@ -393,9 +394,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q5.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q5.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần đùi Nam đen</a>
@@ -407,9 +408,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q6.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q6.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần đùi Nam vải Kaki</a>
@@ -421,9 +422,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q7.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q7.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần đùi Kaki </a>
@@ -435,9 +436,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/q8.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/q8.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Quần đùi vải Nam</a>
@@ -449,9 +450,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/n1.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/n1.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Thắt lưng da màu đen</a>
@@ -463,9 +464,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/n2.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/n2.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Thắt lưng da bò</a>
@@ -477,9 +478,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/n3.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/n3.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Thắt lưng da bò nâu</a>
@@ -491,9 +492,9 @@
                     	<div class="product-item">
                         	<div class="product-top">
                             	<a href="" class="product-thumb">
-                                	<img src="img/n4.jpg" alt="Hình sẩn phẩm">
+                                	<img src="../img/n4.jpg" alt="Hình sẩn phẩm">
                                 </a>
-                                <a href="" class="buy-now">Mua ngay</a> 
+                                <a href="./giohang.html" class="buy-now">Thêm vào giỏ</a> 
                             </div>
                             <div class="product-info">
                             	<a href="" class="product-name">Thắt lưng da nâu sẫm</a>
@@ -524,7 +525,7 @@
 </div>
 <!--FOOTER-->
 <div class="footer">
-		<img src="img/kingdom.png" width="200">
+		<img src="../img/kingdom.png" width="200">
 		<h4>About Us</h4>
 		<p>KINGDOM - Cửa hàng thời trang nam. Địa chỉ 12 Nguyễn Văn Bảo - Phường 4 - Q. Gò Vấp - Thành Phố Hồ Chí Minh</p>
 		<div class="link">
@@ -533,7 +534,7 @@
 			<i class="fa fa-instagram"></i>
 			<i class="fa fa-linkedin"></i>
 		</div>
-		<p>Made <i class="fa fa-heart-o"></i> by King Team </p>
+		<p>Made <i class="fa fa-heart-o"></i> by Đỗ Văn Tài </p>
 	</div>
 </body>
 </html>

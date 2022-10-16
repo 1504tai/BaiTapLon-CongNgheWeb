@@ -84,7 +84,7 @@
 .delivery-content-left-input-top-item{
     width: calc(50% - 12px);
 }
-..delivery-content-left-input-top-item input {
+.delivery-content-left-input-top-item input {
     width: 100%;
     height: 35px;
     border: 1px solid #dddddd;

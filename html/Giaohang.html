@@ -8,31 +8,32 @@
 <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 <link href = "https: //fonts.googleapis.com/css2? family = Mulish: wght @ 700 &family = Poppins: ital, wght @ 0,700; 1.200 & display = swap "rel =" stylesheet ">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="css/payment.css"/>
-<link rel="stylesheet" type="text/css" href="css/header.css"/>
-<link rel="stylesheet" type="text/css" href="css/giaohang.css"/>
+<link rel="stylesheet" type="text/css" href="../css/payment.css"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+<link rel="stylesheet" type="text/css" href="../css/giaohang.css"/>
 </head>
 <body>
     <div class="header">
 		<nav class="nav navbar-inverse navbar-fixed-top">
-			<a href="index.html"><img class="logo" src="img/kingdom.png" width="150"></a>
+			<a href="./index.html"><img class="logo" src="../img/kingdom.png" width="150"></a>
 			<div class="nav-link" id="navlink">
 				<i class="fa fa-times" onClick="hideMenu()"></i>
 				<ul>
 					
-					<li><a href="index.html">TRANG CHỦ</a></li>
-					<li><a href="Product.html">SẢN PHẨM</a></li>
-					<li><a href="blog.html">BLOG</a></li>
-					<li><a href="contact.html">LIÊN HỆ</a></li>
-					<li><a href="giohang.html">THANH TOÁN</a></li>
-					<li class="icon"><img src="img/user.png"></li>
-					<li class="icon"><img src="img/shopping-cart.png"></li>
+					<li><a href="./index.html">TRANG CHỦ</a></li>
+					<li><a href="./Product.html">SẢN PHẨM</a></li>
+					<li><a href="./blog.html">BLOG</a></li>
+					<li><a href="./contact.html">LIÊN HỆ</a></li>
+					<li><a href="./giohang.html">THANH TOÁN</a></li>
+					<li class="icon"><a href="./login.html"><img src="../img/user.png"></a></li>
+					<li class="icon"><a href="./giohang.html"><img src="../img/shopping-cart.png"></a></li>
+                    <li><a href="">SITEMAP</a></li>
 
 					<li class="icon">
 						<form action="" id="search-box">
 							<input type="text" id="search-text" placeholder="Bạn muốn tìm gì?" required>
 							<button id="search-btn">
-								<img src="img/loupe.png">
+								<img src="../img/loupe.png">
 							</button>
 						</form>
 					</li>
@@ -45,36 +46,20 @@
 	</div>
 <section class="delivery">
     <div class="container">
-       <div class="delivery-top-wrap">
-        <div class="delivery-top">
-            <div class="delivery-top-cart delivery-top-item">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-            <div class="delivery-top-adress delivery-top-item">
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="delivery-top-payment delivery-top-item">
-                <i class="fas fa-money-check-alt"></i>
-             </div>
-            </div>
-        </div>
-       </div>
-    </div>
-    <div class="container">
         <div class="delivery-content row">
             <div class="delivery-content-left">
-                <h2>Vui lòng chọn địa chỉ giao hàng</h2>
+                <h2>Vui lòng chọn phương thức nhận hàng.</h2>
                 <div class="delivery-content-left-dangnhap row">
                     <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                    <h4 class="dau">Hãy đăng nhập (khi bạn đã có tài khoản của chúng tôi) </h4>
+                    <h4 class="dau">Giao hàng tận nhà. </h4>
                 </div>
                 <div class="delivery-content-left-khachle row">
                     <input checked name="loaikhach" type="radio">
-                    <h4><span style="font-weight:bold ;">Khách lẻ</span> (Nếu bạn không muốn lưu lại thông tin)</h4>
+                    <h4><span style="font-weight:bold ;">Nhận hàng trực tiếp tại cửa hàng.</span></h4>
                 </div>
                 <div class="delivery-content-left-dangky row">
                     <input checked name="loaikhach" type="radio">
-                    <h4><span style="font-weight:bold ;">Đăng ký</span> (Tạo tài khoản với thông tin bên dưới)</h4>
+                    <h4><span style="font-weight:bold ;">Thông tin nhận hàng</span>(Vui lòng để lại thông tin để nhận hàng)</h4>
                 </div>
                 <div class="delivery-content-left-input-top row">
                     <div class="delivery-content-left-input-top-item">
@@ -99,8 +84,8 @@
                         <input type="text">
                 </div>
                 <div class="delivery-content-left-button row return">
-                    <a href="giohang.html" class="return-giohang"><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
-                    <a href="payment.html"><button><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button></a> 
+                    <a href="./giohang.html" class="return-giohang"><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
+                    <a href="./payment.html"><button><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button></a> 
                 </div>
             </div>
             <div class="delivery-content-right">
@@ -141,7 +126,7 @@
     </div>
      <!--		---------------footer----------->
 	<div class="footer">
-		<img src="img/kingdom.png" width="200">
+		<img src="../img/kingdom.png" width="200">
 		<h4>About Us</h4>
 		<p>KINGDOM - Cửa hàng thời trang nam. Địa chỉ 12 Nguyễn Văn Bảo - Phường 4 - Q. Gò Vấp - Thành Phố Hồ Chí Minh</p>
 		<div class="link">
@@ -150,7 +135,7 @@
 			<i class="fa fa-instagram"></i>
 			<i class="fa fa-linkedin"></i>
 		</div>
-		<p>Made <i class="fa fa-heart-o"></i> by King Team</p>
+		<p>Made <i class="fa fa-heart-o"></i> by King Đỗ Văn Tài</p>
 	</div>
 </section>
 </body>
